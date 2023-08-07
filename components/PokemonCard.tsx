@@ -1,10 +1,10 @@
 import { Pokemon } from "../utils/interfaces";
 import Image from "next/image";
-import { typeColors } from "../utils/typeColours";
+import { typeColors } from "./front-utils/typeColours";
 
 const PokemonCard = ({ pokemon }: { pokemon: Pokemon }) => {
   return (
-    <div className="border p-4 rounded-md shadow-md bg-gray-500 flex flex-col items-center justify-between">
+    <div className="border py-4 rounded-md shadow-md bg-gray-500 flex flex-col items-center justify-between">
       <div className="mb-4 flex flex-col items-center">
         <h3 className="text-lg font-semibold text-white mb-2">#{pokemon.id}</h3>
         <h3 className="text-2xl font-semibold text-white capitalize">

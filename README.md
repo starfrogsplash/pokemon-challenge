@@ -1,6 +1,11 @@
 # Pokemon Challenge
 
+App displaying 151 pokemon 
+
 https://github.com/starfrogsplash/pokemon-challenge/assets/22579826/a96b12b6-d338-4583-8c6a-5cef4aab13cc
+
+## Tech used
+Next.js, Typescript, prisma, sqlite
 
 ## Getting Started
 

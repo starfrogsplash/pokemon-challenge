@@ -8,18 +8,13 @@ interface Pokemon {
 interface Stats {
   base_stat: number;
   effort: number;
-  stat: {
-    name: string;
-    url: string
-  }
+  name: string;
 }  
 
 interface Types {
   slot: number;
-  type: {
-    name: string;
-    url: string
-  }
+  name: string;
+
 }
 
 export type {

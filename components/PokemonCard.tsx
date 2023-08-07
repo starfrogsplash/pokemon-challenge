@@ -16,7 +16,7 @@ const PokemonCard = ({ pokemon }: { pokemon: Pokemon }) => {
       <div className="text-white text-center">
         {pokemon.stats.map((stat, i) => (
           <p key={i} className="capitalize">
-            {stat.stat.name}: {stat.base_stat}
+            {stat.name}: {stat.base_stat}
           </p>
         ))}
         <div >
@@ -24,7 +24,7 @@ const PokemonCard = ({ pokemon }: { pokemon: Pokemon }) => {
           <div className="flex flex-wrap justify-center">
             {pokemon.types.map((type, i) => (
               <span key={i} className="bg-gray-800 px-2 py-1 rounded text-white capitalize mr-2 mb-2">
-                {type.type.name}
+                {type.name}
               </span>
             ))}
           </div>

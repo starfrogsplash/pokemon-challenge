@@ -1,5 +1,6 @@
 import { Pokemon } from "../utils/interfaces";
 import Image from "next/image";
+import { typeColors } from "../utils/typeColours";
 
 const PokemonCard = ({ pokemon }: { pokemon: Pokemon }) => {
   return (
@@ -11,12 +12,14 @@ const PokemonCard = ({ pokemon }: { pokemon: Pokemon }) => {
         </h3>
       </div>
       <div className="my-2 flex flex-col">
-        <div className="my-4" style={{ width: "100%", height: "auto" }}>
+        <div className="my-4 w-40">
           <Image
+            className="w-full h-auto"
             src={`/sprites/${pokemon.id}.svg`}
             alt={pokemon.name}
-            width={140}
-            height={140}
+            width={0}
+            height={0}
+            priority
           />
         </div>
       </div>
@@ -27,13 +30,13 @@ const PokemonCard = ({ pokemon }: { pokemon: Pokemon }) => {
               <p className="font-semibold mr-2">{stat.name}:</p>
               <p className="text-sm">{stat.base_stat}</p>
             </div>
-          <div className="h-4 bg-gray-800 rounded">
-            <div
-              className="h-full bg-blue-500 rounded"
-              style={{ width: `${(stat.base_stat / 200) * 100}%` }}
-            ></div>
+            <div className="h-4 bg-gray-800 rounded">
+              <div
+                className="h-full bg-blue-500 rounded"
+                style={{ width: `${(stat.base_stat / 200) * 100}%` }}
+              ></div>
+            </div>
           </div>
-        </div>
         ))}
         <div>
           <p className="font-semibold mb-2">Types:</p>
@@ -41,7 +44,9 @@ const PokemonCard = ({ pokemon }: { pokemon: Pokemon }) => {
             {pokemon.types.map((type, i) => (
               <span
                 key={i}
-                className="bg-gray-800 px-2 py-1 rounded text-white capitalize mr-2 mb-2"
+                className={`px-2 py-1 rounded text-white capitalize mr-2 mb-2 ${
+                  typeColors[type.name.toLowerCase()] || "bg-gray-400"
+                }`}
               >
                 {type.name}
               </span>

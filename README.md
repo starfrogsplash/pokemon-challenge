@@ -1,6 +1,8 @@
 # Pokemon Challenge
-## Getting Started
 
+https://github.com/starfrogsplash/pokemon-challenge/assets/22579826/a96b12b6-d338-4583-8c6a-5cef4aab13cc
+
+## Getting Started
 
 1. Install
 

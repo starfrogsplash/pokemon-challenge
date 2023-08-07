@@ -14,7 +14,6 @@ interface Stats {
 interface Types {
   slot: number;
   name: string;
-
 }
 
 export type {

@@ -10,5 +10,5 @@ const fetchPokemonData = async () => {
 }
 
 export {
-    fetchPokemonData
+  fetchPokemonData
 }

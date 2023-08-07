@@ -10,7 +10,7 @@ const PokemonCard = ({ pokemon }: { pokemon: Pokemon }) => {
       </div>
       <div className="my-2 flex flex-col">
       <div className="my-4" style={{ width: '100%', height: 'auto'  }}>
-        <Image src={`/sprites/${pokemon.id}.svg`} alt={pokemon.name} width={140} height={140} objectFit="contain" />
+        <Image src={`/sprites/${pokemon.id}.svg`} alt={pokemon.name} width={140} height={140} />
       </div>
       </div>
       <div className="text-white text-center">

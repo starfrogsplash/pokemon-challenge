@@ -19,6 +19,12 @@ yarn dev
 pnpm dev
 ```
 
+3. run tests:
+
+```bash
+npm run test
+```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser.
 
 [API routes]can be accessed on [http://localhost:3000/api/app](http://localhost:3000/api/app).
